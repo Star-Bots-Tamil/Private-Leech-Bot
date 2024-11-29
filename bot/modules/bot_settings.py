@@ -45,31 +45,31 @@ bool_vars = [
 
 async def load_config():
 
-    BOT_TOKEN = environ.get('BOT_TOKEN', '')
+    BOT_TOKEN = environ.get('BOT_TOKEN', '7947222324:AAGqww8Ylj-_e_O_-tFdHP8KeDUXNw7PADw')
     if len(BOT_TOKEN) == 0:
         BOT_TOKEN = config_dict['BOT_TOKEN']
 
-    TELEGRAM_API = environ.get('TELEGRAM_API', '')
+    TELEGRAM_API = environ.get('TELEGRAM_API', '11973721')
     if len(TELEGRAM_API) == 0:
         TELEGRAM_API = config_dict['TELEGRAM_API']
     else:
         TELEGRAM_API = int(TELEGRAM_API)
 
-    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '')
+    TELEGRAM_HASH = environ.get('TELEGRAM_HASH', '5264bf4663e9159565603522f58d3c18')
     if len(TELEGRAM_HASH) == 0:
         TELEGRAM_HASH = config_dict['TELEGRAM_HASH']
 
     BOT_MAX_TASKS = environ.get('BOT_MAX_TASKS', '')
     BOT_MAX_TASKS = int(BOT_MAX_TASKS) if BOT_MAX_TASKS.isdigit() else ''
 
-    OWNER_ID = environ.get('OWNER_ID', '')
+    OWNER_ID = environ.get('OWNER_ID', '1391556668')
     OWNER_ID = config_dict['OWNER_ID'] if len(OWNER_ID) == 0 else int(OWNER_ID)
 
     GROUPS_EMAIL = environ.get('GROUPS_EMAIL', '')
     if len(GROUPS_EMAIL) != 0:
         GROUPS_EMAIL = GROUPS_EMAIL.lower()
 
-    DATABASE_URL = environ.get('DATABASE_URL', '')
+    DATABASE_URL = environ.get('DATABASE_URL', 'mongodb+srv://KarthikMovies:KarthikUK007@cluster0.4l5byki.mongodb.net/?retryWrites=true&w=majority')
     if len(DATABASE_URL) == 0:
         DATABASE_URL = ''
 
@@ -117,7 +117,7 @@ async def load_config():
     if len(FILELION_API) == 0:
         FILELION_API = ''
 
-    LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '')
+    LEECH_LOG_ID = environ.get('LEECH_LOG_ID', '-1001821439025')
     LEECH_LOG_ID = '' if len(LEECH_LOG_ID) == 0 else int(LEECH_LOG_ID)
 
     if len(download_dict) != 0:
@@ -134,11 +134,11 @@ async def load_config():
     SEARCH_LIMIT = environ.get('SEARCH_LIMIT', '')
     SEARCH_LIMIT = 0 if len(SEARCH_LIMIT) == 0 else int(SEARCH_LIMIT)
 
-    LEECH_DUMP_ID = environ.get('LEECH_DUMP_ID', '')
+    LEECH_DUMP_ID = environ.get('LEECH_DUMP_ID', '-1001928370532')
     if len(LEECH_DUMP_ID) == 0: 
         LEECH_DUMP_ID = ''
 
-    CMD_SUFFIX = environ.get('CMD_SUFFIX', '')
+    CMD_SUFFIX = environ.get('CMD_SUFFIX', '/')
 
     USER_SESSION_STRING = environ.get('USER_SESSION_STRING', '')
 
@@ -187,10 +187,10 @@ async def load_config():
     USE_SERVICE_ACCOUNTS = environ.get('USE_SERVICE_ACCOUNTS', '')
     USE_SERVICE_ACCOUNTS = USE_SERVICE_ACCOUNTS.lower() == 'true'
 
-    AS_DOCUMENT = environ.get('AS_DOCUMENT', '')
+    AS_DOCUMENT = environ.get('AS_DOCUMENT', 'true')
     AS_DOCUMENT = AS_DOCUMENT.lower() == 'true'
 
-    SHOW_MEDIAINFO = environ.get('SHOW_MEDIAINFO', '')
+    SHOW_MEDIAINFO = environ.get('SHOW_MEDIAINFO', 'true')
     SHOW_MEDIAINFO = SHOW_MEDIAINFO.lower() == 'true'
 
     MEDIA_GROUP = environ.get('MEDIA_GROUP', '')
@@ -235,11 +235,11 @@ async def load_config():
     DELETE_LINKS = environ.get('DELETE_LINKS', '')
     DELETE_LINKS = DELETE_LINKS.lower() == 'true'
     
-    FSUB_IDS = environ.get('FSUB_IDS', '')
+    FSUB_IDS = environ.get('FSUB_IDS', '-1002008853384')
     if len(FSUB_IDS) == 0:
         FSUB_IDS = ''
 
-    MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '')
+    MIRROR_LOG_ID = environ.get('MIRROR_LOG_ID', '-1001824185044')
     if len(MIRROR_LOG_ID) == 0:
         MIRROR_LOG_ID = ''
 
@@ -253,7 +253,7 @@ async def load_config():
     IMAGES = (IMAGES.replace("'", '').replace('"', '').replace(
         '[', '').replace(']', '').replace(",", "")).split()
 
-    SET_COMMANDS = environ.get('SET_COMMANDS', '')
+    SET_COMMANDS = environ.get('SET_COMMANDS', 'true')
     SET_COMMANDS = SET_COMMANDS.lower() == 'true'
 
     TOKEN_TIMEOUT = environ.get('TOKEN_TIMEOUT', '')
