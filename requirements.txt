@@ -34,7 +34,6 @@ pytz
 pyrofork==2.2.11
 python-dotenv
 python-magic
-python-openstackclient
 qbittorrent-api
 requests
 speedtest-cli
